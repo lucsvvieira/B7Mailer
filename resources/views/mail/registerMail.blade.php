@@ -1,3 +1,3 @@
 <h1>
-    Seja bem vindo
+    Seja bem vindo, {{$nome}}
 </h1>
