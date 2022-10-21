@@ -14,6 +14,8 @@ class AuthMailController extends Controller
     public function sendRegisterMail() {
         $registerEmail = new RegisterEmail();
 
-        Mail::to('lucas@email.com')->send($registerEmail);
+        return $registerEmail;
+
+        // Mail::to('lucas@email.com')->send($registerEmail);
     }
 }
