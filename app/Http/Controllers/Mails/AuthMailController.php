@@ -17,10 +17,10 @@ class AuthMailController extends Controller
         $user = new User();
         $user->name = 'Lucas Vieira.';
 
-        $registerEmail = new RegisterEmail($user->name);
+        $registerEmail = new RegisterEmail($user);
 
-        return $registerEmail;
+        //return $registerEmail;
 
-        // Mail::to('lucas@email.com')->send($registerEmail);
+        Mail::to('lucas@email.com')->send($registerEmail);
     }
 }
